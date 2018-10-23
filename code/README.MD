@@ -13,18 +13,19 @@ To use the code, open .mlx file throught MATLAB.
 Any file or installation will be prompt by MATLAB such as neural network toolbox.
  
  alexnet.mlx - provide alexnet with fine-tuning and SVM codes
+ 
  googlenet.mlx - provide googlenet with fine-tuning codes
  
 Result folder contains the result (score of testing data from each model) matrix
- - load <filename> 
- to load and use in MATLAB
+ - load (filename) 
+ to load a 'filename'.mat and use in MATLAB
  
 Folder structure will be described below:
- - LLC_code -> contains package from Jianchao Yang for LLC coding, files added will be described below
-  - codebook_generation.m  -> generate a codebook
-  - model_30.mat -> SVM model train on 30 images each class
-  - model_full.mat -> SVM model train on all training images provided
-  - Test_Model.mat -> used to test the accuracy of SVM model
+ * LLC_code -> contains package from Jianchao Yang for LLC coding, files added will be described below
+  	* codebook_generation.m  -> generate a codebook
+  	* model_30.mat -> SVM model train on 30 images each class
+  	* model_full.mat -> SVM model train on all training images provided
+  	* Test_Model.mat -> used to test the accuracy of SVM model
  - Result -> contains result from each individual classification model
  - alex_Net.mlx -> code for alexNet with fine-tuning and SVM
  - ClassLabel.mat -> used in fusion_technique.mlx
@@ -38,8 +39,8 @@ Folder structure will be described below:
 The step to reproduce experiment is described based on phases in testing report:
 
 Phase 1:
-	* For each of the code below, setup the correct path for datasets in each code before proceding.
-	* Dataset is available to download in (https://github.com/been1997/X-ray.git)
+	** For each of the code below, setup the correct path for datasets in each code before proceding.**
+	 Dataset is available to download in (https://github.com/been1997/X-ray.git)
 	1. run code in alex_Net.mlx, googlenet_svm.mlx, googlenet.mlx, squeezenet.mlx 
 	
 Phase 2,3,4,5:
@@ -57,7 +58,7 @@ Phase 7:
 	1. run preprocessing_50sampling.py or preprocessing_oversampling.py to sample your datasets. Prepare a backup for the dataset before proceding.
 
 Phase 8:
-	* set appropriate directory in each code.
+	**set appropriate path directory in each code.**
 	1. A codebook is submitted. codebook is can be constructed by running codebook_generation.m.
 	2. train our training data using LLC_Test.mat (ignore the code except changing the filename path)
 	3. save the SVM model
