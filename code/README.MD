@@ -39,7 +39,7 @@ Folder structure will be described below:
 The step to reproduce experiment is described based on phases in testing report:
 
 Phase 1:
-	** For each of the code below, setup the correct path for datasets in each code before proceding.**
+	**For each of the code below, setup the correct path for datasets in each code before proceding.**
 	 Dataset is available to download in (https://github.com/been1997/X-ray.git)
 	1. run code in alex_Net.mlx, googlenet_svm.mlx, googlenet.mlx, squeezenet.mlx 
 	
