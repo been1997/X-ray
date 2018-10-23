@@ -39,15 +39,20 @@ Folder structure will be described below:
 The step to reproduce experiment is described based on phases in testing report:
 
 Phase 1:
+
 	**For each of the code below, setup the correct path for datasets in each code before proceding.**
+	
 	 Dataset is available to download in (https://github.com/been1997/X-ray.git)
+	 
 	1. run code in alex_Net.mlx, googlenet_svm.mlx, googlenet.mlx, squeezenet.mlx 
 	
 Phase 2,3,4,5:
+
 	1. Save result from phase 1 into .mat file before proceding OR used our result in code/result folder.
 	2. run fusion_technique.mlx (run respective technique as needed)
 	
 Phase 6:
+
 	1. any code can be used. However change setting in the following codes to any data augmentation technique needed
 	imageAugmenter = imageDataAugmenter( ...
     'RandRotation',rotationRange, ...
@@ -55,9 +60,11 @@ Phase 6:
     'RandYShear',shearRange);
 
 Phase 7:
+
 	1. run preprocessing_50sampling.py or preprocessing_oversampling.py to sample your datasets. Prepare a backup for the dataset before proceding.
 
 Phase 8:
+
 	**set appropriate path directory in each code.**
 	1. A codebook is submitted. codebook is can be constructed by running codebook_generation.m.
 	2. train our training data using LLC_Test.mat (ignore the code except changing the filename path)
